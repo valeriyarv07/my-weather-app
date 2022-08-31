@@ -20,16 +20,17 @@ body {
 
 .btn-search {
   color: black;
-  background-color: #f6e7d9;
-  border: 2px solid #f2bb84;
-  border-radius: 2px;
+  border: 2px solid rgba(18, 116, 193, 0.3);
+  background-color: rgba(18, 116, 193, 0.1);
+
+  border-radius: 20px;
   padding: 5px 20px;
 }
 
 .btn-search:hover,
 .btn-search:focus,
 .btn-search:visited {
-  background-color: #f2bb84;
+  background-color: rgba(18, 116, 193, 0.5);
   color: black;
 }
 
@@ -37,7 +38,7 @@ body {
   color: black;
   background-color: #dfd0f1;
   border: 2px solid #9b91af;
-  border-radius: 2px;
+  border-radius: 20px;
   padding: 5px 20px;
 }
 
@@ -72,9 +73,8 @@ h3 {
   font-weight: 500;
   font-style: italic;
   font-size: 16px;
-  margin: 0 10px;
-  padding: 10px 10px;
-  text-align: left;
+  text-align: center;
+  position: relative;
 }
 
 li {
@@ -136,7 +136,7 @@ p {
   text-align: center;
   height: 150px;
   border: 1px solid #ab47bc;
-  border-radius: 2px;
+  border-radius: 20px;
 }
 
 .card-text {
@@ -149,6 +149,9 @@ p {
   max-width: 1200px;
   background-image: url(/src/img/sky.jpg);
   background-size: 100%;
+  display: block;
+  margin: 100px auto;
+  max-width: 1000px;
 }
 
 .units a {
@@ -168,4 +171,13 @@ p {
 
 .forecast-weather {
   margin-top: 18px;
+}
+
+.source-code {
+  text-align: left;
+  color: #898199;
+}
+
+.source-code a {
+  text-decoration: none;
 }
