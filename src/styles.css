@@ -146,17 +146,23 @@ p {
 
 .container-whole-page {
   background-color: rgba(241, 112, 12, 0.02);
-  max-width: 1200px;
   background-image: url(/src/img/sky.jpg);
   background-size: 100%;
   display: block;
-  margin: 100px auto;
-  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 900px;
+}
+
+.whole-page-wrapper {
+  margin: 20px auto;
+  max-width: 900px;
 }
 
 .units a {
   text-decoration: none;
   color: #753abf;
+  font-size: 22px;
 }
 
 #description {
