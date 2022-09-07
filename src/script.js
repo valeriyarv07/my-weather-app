@@ -106,12 +106,18 @@ function showTemperature(response) {
   let currentHumidity = document.querySelector("#humidity");
   let currentSpeed = document.querySelector("#wind");
   let desiredCity = document.querySelector("#desired-city");
+  let iconWeather = document.querySelector("#icon");
 
   currentTemperature.innerHTML = temperature;
   currentHumidity.innerHTML = humidity;
   currentSpeed.innerHTML = speed;
   currentDescription.innerHTML = `${description}`;
   desiredCity.innerHTML = cityName;
+  iconWeather.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconWeather.setAttribute("alt", response.data.weather[0].description);
 }
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
